@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Data Warga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Database Warga RT 05</h1>
+        <p>Silakan isi data Anda dengan benar.</p>
+
+        <form action="/kirim-data-server" method="POST">
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama_lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nik">Nomor NIK:</label>
+                <input type="text" id="nik" name="nik_warga" minlength="16" maxlength="16">
+            </div>
+
+            <div class="form-group">
+                <label for="hp">Nomor HP (WhatsApp):</label>
+                <input type="tel" id="hp" name="nomor_hp">
+            </div>
+
+            <div class="form-group">
+                <label>Setuju Kenaikan Iuran RT?</label>
+                <div class="radio-group">
+                    <input type="radio" id="setuju" name="iuran" value="setuju">
+                    <label for="setuju">Ya, Setuju</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="tidak" name="iuran" value="tidak">
+                    <label for="tidak">Tidak, Saya Keberatan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Data</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
