@@ -12,6 +12,10 @@
     {
       "src": "/tampil",
       "dest": "/api/tampil.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/$1.php"
     }
   ]
 }
