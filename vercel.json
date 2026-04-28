@@ -6,16 +6,12 @@
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.php"
-    },
-    {
       "src": "/tampil",
       "dest": "/api/tampil.php"
     },
     {
-      "src": "/(.*)",
-      "dest": "/api/$1.php"
+      "src": "/api-mahasiswa",
+      "dest": "/api/api_mahasiswa.php"
     }
   ]
 }
