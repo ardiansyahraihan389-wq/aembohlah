@@ -32,7 +32,7 @@
 
 <script>
     // Mengambil data dari api_mahasiswa.php
-    fetch('api_mahasiswa.php')
+    fetch('api/api_mahasiswa.php')
         .then(response => response.json())
         .then(data => {
             const tableBody = document.getElementById('data-tabel');
